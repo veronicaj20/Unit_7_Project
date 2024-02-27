@@ -51,7 +51,7 @@ public class PackageSimulator {
     }
 
     public double generateTotalCost() {
-        double cost = 0;
+        double cost = 0.0;
         for (Package p : packages) {
             cost += PostageCalculator.calculatePostage(p);
         }
@@ -79,15 +79,11 @@ public class PackageSimulator {
             System.out.println("Height: " + p.getHeight());
             System.out.println("Length: " + p.getLength());
             System.out.println("Width: " + p.getWidth());
-            System.out.println("Cost: $" + generateTotalCost());
+            System.out.println("Cost: $" + PostageCalculator.calculatePostage(p));
         }
 
+        System.out.println();
+        System.out.println("__________________________________________");
+        System.out.println("Total cost of all packages: $" + generateTotalCost());
     }
-
-
-
-
-
-
-
 }

@@ -94,7 +94,7 @@ public class Address {
     public String toString() {
         String address = houseNumber + " " + streetName;
         if (aptNumber != null) {
-            address += " " + aptNumber + ", ";
+            address += " " + aptNumber + ", " + city + ", " + state + " " + zip;
         }
         else {
             address += ", " + city + ", " + state + " " + zip;

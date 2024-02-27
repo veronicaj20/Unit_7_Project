@@ -38,6 +38,34 @@ public class Main {
             System.out.println("Cost: $" + cost);
         }
 
+        // choice 2
+        else if (choice == 2) {
+            PackageSimulator sim = new PackageSimulator();
+            sim.getSimulationInfo();
+        }
+
+        // choice 3
+        else if (choice == 3) {
+            System.out.println("How the package costs are calculated:");
+            System.out.println("~");
+            System.out.println("- There is a base cost of $3.75 for every package.");
+            System.out.println("- For every tenth of a pound, 5 cents are added.");
+            System.out.println("- Then, find the county codes of your origin and destination zip codes, which are the first three numbers.");
+            System.out.println("- Subtract the destination county code from the origin, and divide that by 100.");
+            System.out.println("- Add that to your total.");
+            System.out.println();
+
+            System.out.println("- But you must account for if the package is oversized.");
+            System.out.println("- Packages that are more than 40 pounds will be charged 10 cents every additional pound.");
+            System.out.println("- If its dimensions exceed a total of 36 inches, every additional inch will also cost 10 cents.");
+            System.out.println("- Adding all those numbers with your total gives you the final cost.");
+        }
+
+        // choice 4
+        else if (choice == 4) {
+            System.exit(0);
+        }
+
 
 
 
